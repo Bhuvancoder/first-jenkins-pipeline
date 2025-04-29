@@ -3,7 +3,7 @@ pipeline{
 	stages  {
 		stage('Back-end'){
 			agent {
-				docker {image 'maven:3.8.8-openjdk-17'}
+				docker {image 'maven:3.8.8-eclipse-temurin-17'}
 			}
 			steps {
 				sh 'mvn --version'
